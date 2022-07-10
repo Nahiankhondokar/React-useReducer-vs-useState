@@ -12,6 +12,10 @@ const Home = () => {
       <Row className="justify-content-center">
         <Col md={4} className="my-5">
           <Card className="shadow p-2">
+            <Card.Header>
+              {" "}
+              <h3 className="text-center">React useReducer Hook</h3>{" "}
+            </Card.Header>
             {textState.error && (
               <Alert variant="danger">This is an Error</Alert>
             )}
@@ -47,7 +51,7 @@ const Home = () => {
             />
             <br />
             <select
-              className="form-control"
+              className="form-select"
               onChange={(e) =>
                 dispatch({
                   type: "ERROR_LOAD",
